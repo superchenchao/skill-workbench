@@ -1,0 +1,12 @@
+{
+  "name": "skill-workbench",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/skill-workbench.mjs rebuild-source",
+    "serve": "node scripts/skill-workbench.mjs serve",
+    "test": "node --test tests/skill-workbench.test.mjs",
+    "check": "npm run build && npm test && git diff --check"
+  }
+}
